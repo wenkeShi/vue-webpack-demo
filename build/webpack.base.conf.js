@@ -26,6 +26,7 @@ module.exports = {
       }
     ]
   },
+  
   plugins:[
     new HtmlWebpackPlugin({title:'vue-webpack-demo'})
   ]
