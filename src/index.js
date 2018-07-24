@@ -2,7 +2,6 @@
 // import './style/base.css'
 // import printMe from './print'
 // let vm = new Vue()
-console.log('hello webpack')
 let i = document.createElement('input')
 let sc = document.createElement('img')
 i.addEventListener('change', function(e){
