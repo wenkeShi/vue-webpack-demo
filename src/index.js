@@ -1,7 +1,6 @@
 // import Vue from 'vue'
 // import './style/base.css'
 // import printMe from './print'
-// let vm = new Vue()
 let i = document.createElement('input')
 let sc = document.createElement('img')
 i.addEventListener('change', function(e){
