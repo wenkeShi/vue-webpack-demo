@@ -13,7 +13,6 @@ document.body.appendChild(sc)
 //   sc.src = require('./style/' + 'ercode'+'.jpg')
 //   document.body.appendChild(sc)
 // },1000)
-
 // function component() {
 //   var element = document.createElement('div');
 //   var btn = document.createElement('button');
