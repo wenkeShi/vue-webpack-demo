@@ -8,6 +8,7 @@ i.addEventListener('change', function(e){
 })
 document.body.appendChild(i)
 document.body.appendChild(sc)
+
 // setTimeout(()=>{
 //   let sc = document.createElement('img')
 //   sc.src = require('./style/' + 'ercode'+'.jpg')
