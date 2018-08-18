@@ -7,7 +7,6 @@ i.addEventListener('change', function(e){
   sc.src =  require('./style/' + 'ercode'+e.target.value+'.jpg')
 })
 
-
 document.body.appendChild(i)
 document.body.appendChild(sc)
 
