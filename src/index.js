@@ -1,4 +1,4 @@
-// import Vue from 'vue'
+import Vue from 'vue'
 // import './style/base.css'
 // import printMe from './print'
 let i = document.createElement('input')
@@ -7,8 +7,10 @@ i.addEventListener('change', function(e){
   sc.src =  require('./style/' + 'ercode'+e.target.value+'.jpg')
 })
 
-document.body.appendChild(i)
+document.boxdy.appendChild(i)
 document.body.appendChild(sc)
+
+
 // setTimeout(()=>{
 //   let sc = document.createElement('img')
 //   sc.src = require('./style/' + 'ercode'+'.jpg')

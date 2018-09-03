@@ -11,10 +11,14 @@ module.exports = merge(baseConf, {
       root: path.resolve(__dirname, '..')   // root must be this
     }),
     new BundleAnalyzerPlugin(),
-    new webpack.optimize.CommonsChunkPlugin({
-      name: 'base.[chunkhash:8].js',
-    })
+    // new webpack.optimize.CommonsChunkPlugin({
+    //   name: 'base.[chunkhash:8].js',
+    // })
+    // new webpack.optimize.splitChunksPlugin()
   ],
   // devtool: '#source-map',
+  optimization: {
+    splitChunks: {}
+  },
   mode: 'production'
 })

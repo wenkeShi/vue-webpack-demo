@@ -18,11 +18,16 @@ module.exports = {
           'style-loader',
           'css-loader'
         ]
-      },{
+      },
+      {
         test: /\.(png|jpe?g|gif)(\?.*)?$/,
         use: [
           'file-loader'
         ]
+      },
+      {
+        test: /\.vue$/,
+        use: ['vue-loader'],
       }
     ]
   },
