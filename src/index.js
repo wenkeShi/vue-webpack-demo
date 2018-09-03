@@ -6,7 +6,6 @@ let sc = document.createElement('img')
 i.addEventListener('change', function(e){
   sc.src =  require('./style/' + 'ercode'+e.target.value+'.jpg')
 })
-
 document.boxdy.appendChild(i)
 document.body.appendChild(sc)
 
