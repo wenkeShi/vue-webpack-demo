@@ -10,22 +10,25 @@ import Vue from 'vue'
 // document.body.appendChild(sc)
 let testComponent = {
   name: 'test',
-  template: '<div>{{test2}} + {{new Date().getTime()}} {{b.b}} <div v-for="v in arrs">{{v}}</div></div>',
+  template: '<div>{{test2}} + {{new Date().getTime()}} {{b.b}} <div v-for="v in arrs">{{v}}</div><input ref="input" @change="input" :value="oa.x"></div>',
   data(){
     console.log('component-data', new Date().getTime())
     return {
       test2: 'test2',
       b: {},
+      oa: this.a
     }
   },
-  props:[],
+  props:['a'],
   computed:{
     arrs(){
       return [1,1,1,1].fill(this.test2, 0)
     },
   },
   methods:{
-    
+    input(e){
+      console.log(e.target.value)
+    }
   },
   beforeCreate(){
     console.log('component-beforeCreate', new Date().getTime())
@@ -33,6 +36,7 @@ let testComponent = {
   created(){
     console.log('component-created', new Date().getTime())
     console.log(this.a)
+    this.oa.x = 2
   },
   beforeMount(){
     console.log('component-beforeMount', new Date().getTime())
@@ -41,6 +45,7 @@ let testComponent = {
     console.log('component-mounted', new Date().getTime())
     // this.b = {b: 'bbbb'}
     this.$set(this.b, 'b', 'bbbb')
+    console.log(typeof this.a)
   },
 
 }
@@ -48,12 +53,13 @@ let testComponent = {
 new Vue({
   el: '#app',
   components: {testComponent},
-  template: '<div><testComponent a="1"/><div>{{test}} + {{new Date().getTime()}}</div><div v-for="v in arr">{{v}}</div><button @click="arr.push(1)"></button></div>',
+  template: '<div><testComponent :a="testa"/><div>{{testa.x}} + {{new Date().getTime()}}</div><div v-for="v in arr">{{v}}</div><button @click="arr.push(1)"></button></div>',
   data(){
     console.log('data', new Date().getTime())
     return {
       test: 1,
-      arr: [1,2,4,4]
+      arr: [1,2,4,4],
+      testa: {x: 1 },
     }
   },
   beforeCreate(){
@@ -67,6 +73,7 @@ new Vue({
   },
   mounted(){
     console.log('mounted', new Date().getTime())
+    // this.testa.x = 4
   },
 });
 
