@@ -19,7 +19,6 @@ let testComponent = {
       oa: this.a
     }
   },
-  
   props:['a'],
   computed:{
     arrs(){
