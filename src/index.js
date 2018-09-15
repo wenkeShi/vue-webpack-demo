@@ -8,6 +8,7 @@ import Vue from 'vue'
 // })
 // document.boxdy.appendChild(i)
 // document.body.appendChild(sc)
+
 let testComponent = {
   name: 'test',
   template: '<div>{{test2}} + {{new Date().getTime()}} {{b.b}} <div v-for="v in arrs">{{v}}</div><input ref="input" @change="input" :value="oa.x"></div>',
