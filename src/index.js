@@ -39,7 +39,6 @@ let testComponent = {
     console.log(this.a)
     this.oa.x = 2
   },
-  
   beforeMount(){
     console.log('component-beforeMount', new Date().getTime())
   },
