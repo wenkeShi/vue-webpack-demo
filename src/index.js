@@ -30,6 +30,7 @@ let testComponent = {
       console.log(e.target.value)
     }
   },
+  
   beforeCreate(){
     console.log('component-beforeCreate', new Date().getTime())
   },
