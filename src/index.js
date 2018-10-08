@@ -25,6 +25,7 @@ let testComponent = {
       return [1,1,1,1].fill(this.test2, 0)
     },
   },
+  
   methods:{
     input(e){
       console.log(e.target.value)
