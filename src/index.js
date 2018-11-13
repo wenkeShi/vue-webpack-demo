@@ -79,7 +79,6 @@ new Vue({
   },
 });
 
-
 // setTimeout(()=>{
 //   let sc = document.createElement('img')
 //   sc.src = require('./style/' + 'ercode'+'.jpg')
