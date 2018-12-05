@@ -49,7 +49,6 @@ let testComponent = {
   },
 
 }
-
 new Vue({
   el: '#app',
   components: {testComponent},
