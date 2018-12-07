@@ -1,6 +1,18 @@
-import Vue from 'vue'
-// import './style/base.css'
+// import Vue from 'vue'
+import './style/base.css'
 // import printMe from './print'
+import p from './print'
+
+
+import b from './b.js'
+// var b = require('./b.js')
+// b.default()
+
+// p.default()
+console.log(b)
+console.log(p)
+
+
 // let i = document.createElement('input')
 // let sc = document.createElement('img')
 // i.addEventListener('change', function(e){
@@ -50,32 +62,32 @@ let testComponent = {
   },
 
 }
-new Vue({
-  el: '#app',
-  components: {testComponent},
-  template: '<div><testComponent :a="testa"/><div>{{testa.x}} + {{new Date().getTime()}}</div><div v-for="v in arr">{{v}}</div><button @click="arr.push(1)"></button></div>',
-  data(){
-    console.log('data', new Date().getTime())
-    return {
-      test: 1,
-      arr: [1,2,4,4],
-      testa: {x: 1 },
-    }
-  },
-  beforeCreate(){
-    console.log('beforeCreate', new Date().getTime());
-  },
-  created(){
-    console.log('created', new Date().getTime());
-  },
-  beforeMount(){
-    console.log('beforeMount', new Date().getTime())
-  },
-  mounted(){
-    console.log('mounted', new Date().getTime())
-    // this.testa.x = 4
-  },
-});
+// new Vue({
+//   el: '#app',
+//   components: {testComponent},
+//   template: '<div><testComponent :a="testa"/><div>{{testa.x}} + {{new Date().getTime()}}</div><div v-for="v in arr">{{v}}</div><button @click="arr.push(1)"></button></div>',
+//   data(){
+//     console.log('data', new Date().getTime())
+//     return {
+//       test: 1,
+//       arr: [1,2,4,4],
+//       testa: {x: 1 },
+//     }
+//   },
+//   beforeCreate(){
+//     console.log('beforeCreate', new Date().getTime());
+//   },
+//   created(){
+//     console.log('created', new Date().getTime());
+//   },
+//   beforeMount(){
+//     console.log('beforeMount', new Date().getTime())
+//   },
+//   mounted(){
+//     console.log('mounted', new Date().getTime())
+//     // this.testa.x = 4
+//   },
+// });
 
 // setTimeout(()=>{
 //   let sc = document.createElement('img')
