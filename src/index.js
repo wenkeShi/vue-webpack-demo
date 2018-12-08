@@ -1,16 +1,34 @@
 // import Vue from 'vue'
 import './style/base.css'
 // import printMe from './print'
-import p from './print'
+// import {changeV, aliasV, getV,changeV3} from './print'
+// let changeV3 = require('./print')
 
 
-import b from './b.js'
+import  {getVal, changeV2, test, showTest,a, default as printB} from './b.js'
+let p = require('./print')
+// let changeV2 = require('./b')
 // var b = require('./b.js')
 // b.default()
-
+printB()
 // p.default()
-console.log(b)
+// console.log(b)
+// console.log(p)
+
+// changeV(2)
+// console.log(getV())
+// console.log(aliasV)
+
+// console.log(getVal())
+
+// console.log(changeV3 === changeV2.changeV2)
+console.log(a)
+console.log(test)
+showTest()
+// test = 2
 console.log(p)
+window.test = function(){console.log(test)}
+window.testP = function(){console.log(p)}
 
 
 // let i = document.createElement('input')
