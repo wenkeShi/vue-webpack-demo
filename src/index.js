@@ -11,6 +11,7 @@ let p = require('./print')
 // var b = require('./b.js')
 // b.default()
 printB()
+
 // p.default()
 // console.log(b)
 // console.log(p)
