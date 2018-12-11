@@ -4,7 +4,6 @@ import './style/base.css'
 // import {changeV, aliasV, getV,changeV3} from './print'
 // let changeV3 = require('./print')
 
-
 import  {getVal, changeV2, test, showTest,a, default as printB} from './b.js'
 let p = require('./print')
 // let changeV2 = require('./b')
