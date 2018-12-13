@@ -9,6 +9,7 @@ let p = require('./print')
 // let changeV2 = require('./b')
 // var b = require('./b.js')
 // b.default()
+
 printB()
 // p.default()
 // console.log(b)
