@@ -17,7 +17,6 @@ printB()
 // changeV(2)
 // console.log(getV())
 // console.log(aliasV)
-
 // console.log(getVal())
 // console.log(changeV3 === changeV2.changeV2)
 
