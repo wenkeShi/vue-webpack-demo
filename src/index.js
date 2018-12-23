@@ -27,7 +27,6 @@ console.log(p)
 window.test = function(){console.log(test)}
 window.testP = function(){console.log(p)}
 
-
 // let i = document.createElement('input')
 // let sc = document.createElement('img')
 // i.addEventListener('change', function(e){
