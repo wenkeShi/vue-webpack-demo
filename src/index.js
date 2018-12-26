@@ -22,7 +22,6 @@ printB()
 console.log(a)
 console.log(test)
 showTest()
-
 // test = 2
 console.log(p)
 window.test = function(){console.log(test)}
