@@ -13,7 +13,6 @@ printB()
 // p.default()
 // console.log(b)
 // console.log(p)
-
 // changeV(2)
 // console.log(getV())
 // console.log(aliasV)
