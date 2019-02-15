@@ -18,7 +18,6 @@ printB()
 // console.log(getVal())
 // console.log(changeV3 === changeV2.changeV2)
 // console.log(a)
-
 console.log(test)
 showTest()
 
